@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import rospy,sys
+import rospy
 from raspimouse_ros.msg import Switches
 
 if __name__ == '__main__':

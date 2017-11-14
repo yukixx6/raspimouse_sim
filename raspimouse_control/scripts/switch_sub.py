@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import sys, rospy
+import rospy
 from raspimouse_ros.msg import Switches
 
 devfile = '/dev/rtswitch'
@@ -18,10 +18,5 @@ def switches_callback(data):
 if __name__ == "__main__":
 	rospy.init_node("switches_data")
 	rate = rospy.Rate(1)
-	while not rospy.is_shutdown():
-		try:
-			rospy.Subscriber("/switches", Switches, switches_callback)
-		except:
-			rospy.logerr("cannot write" + "\n")
-		rate.sleep()
-
+	rospy.Subscriber("/switches", Switches, switches_callback)
+	rospy.spin()
