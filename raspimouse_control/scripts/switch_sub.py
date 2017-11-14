@@ -2,6 +2,9 @@
 import sys, rospy
 from raspimouse_ros.msg import Switches
 
+vel = Switches()
+devfile = '/dev/rtswitch'
+
 def switches_callback():
 		try:
 			with open(devfile + '0','w') as f:
@@ -17,8 +20,6 @@ def listener():
 	rospy.Subscriber("switches", Switches, switches_callback)
 
 if __name__ == "__main__":
-	vel = Switches()
-	devfile = '/dev/rtswitch'
 	rospy.init_node("switches_data")
 	listener()
 	print vel
