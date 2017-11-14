@@ -17,6 +17,5 @@ def switches_callback(data):
 
 if __name__ == "__main__":
 	rospy.init_node("switches_data")
-	rate = rospy.Rate(1)
 	rospy.Subscriber("/switches", Switches, switches_callback)
 	rospy.spin()
