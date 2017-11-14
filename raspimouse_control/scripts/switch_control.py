@@ -3,7 +3,7 @@ import rospy,sys
 from raspimouse_ros.msg import Switches
 
 if __name__ == '__main__':
-	rospy.init_node('switch_vel_pub')
+	rospy.init_node('switch_control')
 	pub = rospy.Publisher('/switches', Switches, queue_size=1)
 	try:
 		while not rospy.is_shutdown():
@@ -17,6 +17,7 @@ if __name__ == '__main__':
 			vel.rear = True if '0' in direction2 else False
 
 			print vel
+			print "\n"
 			pub.publish(vel)
 	except:
 		roapy.logerr("cannot write")

@@ -2,30 +2,25 @@
 import sys, rospy
 from raspimouse_ros.msg import Switches
 
-vel = Switches()
 devfile = '/dev/rtswitch'
 
 def switches_callback(data):
-		try:
-			with open(devfile + '0','w') as f:
-				'0' if vel.front == True else '1'
-			with open(devfile + '1','w') as f:
-				'0' if vel.center == True else '1'
-			with open(devfile + '2','w') as f:
-				'0' if vel.rear == True else '1'
-		except:
-			rospy.logerr("cannot write" + devfile + "[0,1,2]")
-
-def listener():
-	rospy.Subscriber("switches", Switches, switches_callback)
+	try:
+		with open(devfile + '0','w') as f:
+			f.write('0' + "\n") if data.front == True else f.write('1' + "\n")
+		with open(devfile + '1','w') as f:
+			f.write('0' + "\n") if data.center == True else f.write('1' + "\n")
+		with open(devfile + '2','w') as f:
+			f.write('0' + "\n") if data.rear == True else f.write('1' + "\n")
+	except:
+		rospy.logerr("cannot write" + devfile + "[0,1,2]")
 
 if __name__ == "__main__":
 	rospy.init_node("switches_data")
 	rate = rospy.Rate(1)
 	while not rospy.is_shutdown():
 		try:
-			listener()
-			##print vel
+			rospy.Subscriber("/switches", Switches, switches_callback)
 		except:
 			rospy.logerr("cannot write" + "\n")
 		rate.sleep()
