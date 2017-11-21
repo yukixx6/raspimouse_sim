@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+#coding:utf-8
 import rospy, math
 from geometry_msgs.msg import Twist
 
@@ -11,21 +12,27 @@ def motor_freq():
 	while not rospy.is_shutdown():
 		try:
 			with open(lfile,'r') as lf,\
-				 open(rfile,'r') as rf:
-				##lhz = lf.readline()
-				##rhz = rf.readline()
-				lhz = float(lf.readline())
-				rhz = float(rf.readline())
+			open(rfile,'r') as rf:
+				lhz_str = lf.readline().rstrip()
+				rhz_str = rf.readline().rstrip()
+				if len(lhz_str)!=0 and len(rhz_str)!=0:
+
+					#rhz = int(rf.readline().rstrip())
+					#lhz = int(lf.readline().rstrip())
+
+					lhz = int(lhz_str)
+					rhz = int(rhz_str)
+					##print (lhz_str,rhz_str)
+					##lhz = float(lf.readline())
+					##rhz = float(rf.readline())\
+					vel.linear.x = (lhz+rhz)*9*math.pi/160000.0
+					vel.angular.z = (rhz-lhz)*math.pi/800.0
 				
-				##a = (lhz+rhz)*9*math.pi/160000.0
-				##b = (rhz-lhz)*math.pi/800.0
-				vel.linear.x = (lhz+rhz)*9*math.pi/160000.0
-				vel.angular.z = (rhz-lhz)*math.pi/800.0
-				##vel.linear.x = (lhz+rhz)*9.0*math.pi/160000.0
-				##vel.angular.z = (lhz-rhz)*math.pi/800.0
-				
-				print vel
-				pub.publish(vel)
+					print vel
+					pub.publish(vel)
+				else:
+					print ("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+					#rospy.logerr("cannot")
 		except rospy.ROSInterruptException:
 			pass
 
