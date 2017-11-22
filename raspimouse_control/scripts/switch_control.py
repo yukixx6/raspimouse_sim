@@ -2,9 +2,9 @@
 import rospy
 from raspimouse_ros.msg import Switches
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 	rospy.init_node('switch_control')
-	pub = rospy.Publisher('/switches', Switches, queue_size=1)
+	pub = rospy.Publisher('/raspimouse_on_gazebo/switches', Switches, queue_size=1)
 	try:
 		while not rospy.is_shutdown():
 			vel = Switches()

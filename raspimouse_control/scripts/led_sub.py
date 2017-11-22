@@ -4,28 +4,17 @@ from std_msgs.msg import String
 
 devfile = '/dev/rtled'
 
-def leds_callback(cmd):
+def leds_callback(data):
 	try:
 		
 		with open(devfile + '0','w') as f:
-			f.write(cmd.data[1] + "\n")
-			##f.write(1 + "\n") if cmd.data[1] == 1 else f.write(0 + "\n")
+			f.write(data.data[1] + "\n")
 		with open(devfile + '1','w') as f:
-			f.write(cmd.data[4])
-			##f.write(1 + "\n") if cmd.data[4] == 1 else f.write(0 + "\n")
+			f.write(data.data[4])
 		with open(devfile + '2','w') as f:
-			f.write(cmd.data[7])
-			##f.write(1 + "\n") if cmd.data[7] == 1 else f.write(0 + "\n")
+			f.write(data.data[7])
 		with open(devfile + '3','w') as f:
-			f.write(cmd.data[10])
-			##f.write(1 + "\n") if cmd.data[10] == 1 else f.write(0 + "\n")
-		'''
-		print cmd.data[1]
-		print cmd.data[4]
-		print cmd.data[7]
-		print cmd.data[10]
-		'''
-
+			f.write(data.data[10])
 	except:
 		rospy.logerr("cannot write" + devfile + "[0,1,2,3]")
 

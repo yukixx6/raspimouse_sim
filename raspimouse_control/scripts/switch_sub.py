@@ -17,5 +17,5 @@ def switches_callback(data):
 
 if __name__ == "__main__":
 	rospy.init_node("switches_data")
-	rospy.Subscriber("/switches", Switches, switches_callback)
+	rospy.Subscriber("/raspimouse_on_gazebo/switches", Switches, switches_callback)
 	rospy.spin()

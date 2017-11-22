@@ -45,5 +45,4 @@ if __name__ == "__main__":
 			pub.publish(cmd)
 
 	except rospy.ROSInterruptException:
-		##rospy.logerr("cannot write")
 		pass
