@@ -11,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
   controller_manager
   robot_state_publisher
   rospy
+  roscpp
   sensor_msgs
   std_msgs
 )
@@ -135,15 +136,18 @@ include_directories(
 
 ## Declare a C++ executable
 # add_executable(raspimouse_control_node src/raspimouse_control_node.cpp)
+add_executable(buzzer src/buzzer.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # add_dependencies(raspimouse_control_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+# add_dependencies()
 
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(raspimouse_control_node
 #   ${catkin_LIBRARIES}
 # )
+target_link_libraries(buzzer ${catkin_LIBRARIES})
 
 #############
 ## Install ##
