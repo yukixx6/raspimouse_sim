@@ -28,7 +28,7 @@
           </noise>
         </ray>
         <plugin name="gazebo_ros_${prefix}_lightsensor_controller" filename="libgazebo_ros_laser.so">
-          <topicName>/raspimouse_on_gazebo/${prefix}_scan</topicName>
+          <topicName>/raspimouse/${prefix}_scan</topicName>
           <frameName>${prefix}</frameName>
         </plugin>
       </sensor>

@@ -1,4 +1,4 @@
-raspimouse_on_gazebo:
+raspimouse:
   # Publisher
   joint_state_controller:
     type: "joint_state_controller/JointStateController"
