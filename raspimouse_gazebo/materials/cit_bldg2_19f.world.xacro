@@ -1,0 +1,275 @@
+<?xml version="1.0" ?>
+<sdf version="1.4" xmlns:xacro="http://ros.org/wiki/xacro">
+<!-- <sdf version="1.4"> -->
+<xacro:include filename="$(find raspimouse_gazebo)/materials/sample_maze.wall.xacro"/>
+<world name="default">
+  <include>
+    <uri>model://ground_plane</uri>
+  </include>
+   <light name='sun' type='directional'>
+    <cast_shadows>1</cast_shadows>
+    <pose>0 0 5 0 0 0</pose>
+    <diffuse>0.8 0.8 0.8 1</diffuse>
+    <specular>0.2 0.2 0.2 1</specular>
+    <attenuation>
+      <range>1000</range>
+      <constant>0.9</constant>
+      <linear>0.01</linear>
+      <quadratic>0.001</quadratic>
+    </attenuation>
+    <direction>-0.5 0.1 -0.9</direction>
+  </light>
+   <physics type='ode'>
+    <max_step_size>0.001</max_step_size>
+    <real_time_factor>1</real_time_factor>
+    <real_time_update_rate>1000</real_time_update_rate>
+    <gravity>0 0 -9.8</gravity>
+  </physics>
+   <scene>
+    <shadows>0</shadows>
+  </scene>
+   <gui fullscreen='0'>
+    <camera name='user_camera'>
+      <pose>-0.556842 -0.914575 1.68773 0 1.05964 0.520195</pose>
+      <view_controller>orbit</view_controller>
+    </camera>
+  </gui>
+   <!-- horizontal -->
+  <xacro:wall>
+    <pose> -1.0 1.145 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> -0.5 1.145 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 0.0 1.145 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 0.5 1.145 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 1.0 1.145 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 1.5 1.145 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 2.0 1.145 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 2.12 1.145 0.25 0 0 1.57</pose>
+  </xacro:wall>
+
+  <xacro:wall>
+    <pose> 4.0 1.145 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 4.5 1.145 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 5.0 1.145 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 5.5 1.145 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 6.0 1.145 0.25 0 0 1.57</pose>
+  </xacro:wall>
+
+  <xacro:wall>
+    <pose> -1.0 -1.145 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> -0.5 -1.145 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 0.0 -1.145 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 0.5 -1.1455 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 1.0 -1.1455 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 1.5 -1.145 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 2.0 -1.145 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 2.5 -1.145 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 3.0 -1.145 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 3.5 -1.145 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 4.0 -1.145 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 4.5 -1.145 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 5.0 -1.145 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 5.5 -1.145 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 6.0 -1.145 0.25 0 0 1.57</pose>
+  </xacro:wall>
+
+  <!-- vertical -->
+  <xacro:wall>
+    <pose> 2.32 1.345 0.25 0 0 0</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 2.32 1.845 0.25 0 0 0</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 2.32 2.345 0.25 0 0 0</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 2.32 2.845 0.25 0 0 0</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 2.32 3.345 0.25 0 0 0</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 2.32 3.845 0.25 0 0 0</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 2.32 4.345 0.25 0 0 0</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 2.32 4.845 0.25 0 0 0</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 2.32 5.345 0.25 0 0 0</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 2.32 5.845 0.25 0 0 0</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 2.32 6.345 0.25 0 0 0</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 2.32 6.845 0.25 0 0 0</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 2.32 7.345 0.25 0 0 0</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 2.32 7.845 0.25 0 0 0</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 2.32 8.345 0.25 0 0 0</pose>
+  </xacro:wall>
+
+  <xacro:wall>
+    <pose> 3.8 1.345 0.25 0 0 0</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 3.8 1.845 0.25 0 0 0</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 3.8 1.91 0.25 0 0 0</pose>
+  </xacro:wall>
+
+  <xacro:wall>
+    <pose> 4.0 2.11 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 4.5 2.11 0.25 0 0 1.57</pose>
+  </xacro:wall>
+
+  <xacro:wall>
+    <pose> 4.7 2.31 0.25 0 0 0</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 4.7 2.81 0.25 0 0 0</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 4.7 3.31 0.25 0 0 0</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 4.7 3.81 0.25 0 0 0</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 4.7 4.31 0.25 0 0 0</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 4.7 4.81 0.25 0 0 0</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 4.7 5.31 0.25 0 0 0</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 4.7 5.81 0.25 0 0 0</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 4.7 5.965 0.25 0 0 0</pose>
+  </xacro:wall>
+
+  <xacro:wall>
+    <pose> 3.8 7.78 0.25 0 0 0</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 3.8 7.845 0.25 0 0 0</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 3.8 8.345 0.25 0 0 0</pose>
+  </xacro:wall>
+
+  <xacro:wall>
+    <pose> 4.0 7.58 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 4.5 7.58 0.25 0 0 1.57</pose>
+  </xacro:wall>
+
+  <!-- horizontal -->
+  <xacro:wall>
+    <pose> 4.0 8.545 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 4.5 8.545 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 5.0 8.545 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 5.5 8.545 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 6.0 8.545 0.25 0 0 1.57</pose>
+  </xacro:wall>
+
+  <xacro:wall>
+    <pose> 2.12 8.545 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 1.62 8.545 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 1.12 8.545 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 0.62 8.545 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> 0.12 8.545 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> -0.38 8.545 0.25 0 0 1.57</pose>
+  </xacro:wall>
+  <xacro:wall>
+    <pose> -0.88 8.545 0.25 0 0 1.57</pose>
+  </xacro:wall>
+
+
+</world>
+</sdf>
