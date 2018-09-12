@@ -36,7 +36,282 @@
         <view_controller>orbit</view_controller>
       </camera>
     </gui>
-    <model name="wall">
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -9.76 1.145 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -9.0 1.145 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -7.0 1.145 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -5.0 1.145 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -3.0 1.145 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
       <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
       <pose> -1.0 1.145 0.25 0 0 1.57</pose>
       <link name="link">
@@ -54,7 +329,7 @@
         <collision name="collision">
           <geometry>
             <box>
-              <size>0.1 0.5 0.5</size>
+              <size>0.1 2.0 0.5</size>
             </box>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -71,7 +346,7 @@
         <visual name="visual">
           <geometry>
             <box>
-              <size>0.1 0.5 0.5</size>
+              <size>0.1 2.0 0.5</size>
             </box>
           </geometry>
           <material>
@@ -91,172 +366,7 @@
       </link>
       <static>1</static>
     </model>
-    <model name="wall">
-      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> -0.5 1.145 0.25 0 0 1.57</pose>
-      <link name="link">
-        <inertial>
-          <mass>10</mass>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-        </inertial>
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <bounce/>
-            <friction>
-              <ode/>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-          </surface>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
-          </material>
-        </visual>
-        <velocity_decay>
-          <linear>0</linear>
-          <angular>0</angular>
-        </velocity_decay>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <static>1</static>
-    </model>
-    <model name="wall">
-      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 0.0 1.145 0.25 0 0 1.57</pose>
-      <link name="link">
-        <inertial>
-          <mass>10</mass>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-        </inertial>
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <bounce/>
-            <friction>
-              <ode/>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-          </surface>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
-          </material>
-        </visual>
-        <velocity_decay>
-          <linear>0</linear>
-          <angular>0</angular>
-        </velocity_decay>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <static>1</static>
-    </model>
-    <model name="wall">
-      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 0.5 1.145 0.25 0 0 1.57</pose>
-      <link name="link">
-        <inertial>
-          <mass>10</mass>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-        </inertial>
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <bounce/>
-            <friction>
-              <ode/>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-          </surface>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
-          </material>
-        </visual>
-        <velocity_decay>
-          <linear>0</linear>
-          <angular>0</angular>
-        </velocity_decay>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <static>1</static>
-    </model>
-    <model name="wall">
+    <model name="wall_corridor">
       <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
       <pose> 1.0 1.145 0.25 0 0 1.57</pose>
       <link name="link">
@@ -274,7 +384,7 @@
         <collision name="collision">
           <geometry>
             <box>
-              <size>0.1 0.5 0.5</size>
+              <size>0.1 2.0 0.5</size>
             </box>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -291,117 +401,7 @@
         <visual name="visual">
           <geometry>
             <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
-          </material>
-        </visual>
-        <velocity_decay>
-          <linear>0</linear>
-          <angular>0</angular>
-        </velocity_decay>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <static>1</static>
-    </model>
-    <model name="wall">
-      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 1.5 1.145 0.25 0 0 1.57</pose>
-      <link name="link">
-        <inertial>
-          <mass>10</mass>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-        </inertial>
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <bounce/>
-            <friction>
-              <ode/>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-          </surface>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
-          </material>
-        </visual>
-        <velocity_decay>
-          <linear>0</linear>
-          <angular>0</angular>
-        </velocity_decay>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <static>1</static>
-    </model>
-    <model name="wall">
-      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 2.0 1.145 0.25 0 0 1.57</pose>
-      <link name="link">
-        <inertial>
-          <mass>10</mass>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-        </inertial>
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <bounce/>
-            <friction>
-              <ode/>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-          </surface>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
+              <size>0.1 2.0 0.5</size>
             </box>
           </geometry>
           <material>
@@ -476,9 +476,119 @@
       </link>
       <static>1</static>
     </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> 4.75 1.145 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> 6.75 1.145 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
     <model name="wall">
       <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 4.0 1.145 0.25 0 0 1.57</pose>
+      <pose> 7.77 1.145 0.25 0 0 1.57</pose>
       <link name="link">
         <inertial>
           <mass>10</mass>
@@ -531,9 +641,9 @@
       </link>
       <static>1</static>
     </model>
-    <model name="wall">
+    <model name="wall_corridor">
       <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 4.5 1.145 0.25 0 0 1.57</pose>
+      <pose> -15.0 -1.145 0.25 0 0 1.57</pose>
       <link name="link">
         <inertial>
           <mass>10</mass>
@@ -549,7 +659,7 @@
         <collision name="collision">
           <geometry>
             <box>
-              <size>0.1 0.5 0.5</size>
+              <size>0.1 2.0 0.5</size>
             </box>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -566,7 +676,7 @@
         <visual name="visual">
           <geometry>
             <box>
-              <size>0.1 0.5 0.5</size>
+              <size>0.1 2.0 0.5</size>
             </box>
           </geometry>
           <material>
@@ -586,9 +696,9 @@
       </link>
       <static>1</static>
     </model>
-    <model name="wall">
+    <model name="wall_corridor">
       <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 5.0 1.145 0.25 0 0 1.57</pose>
+      <pose> -13.0 -1.145 0.25 0 0 1.57</pose>
       <link name="link">
         <inertial>
           <mass>10</mass>
@@ -604,7 +714,7 @@
         <collision name="collision">
           <geometry>
             <box>
-              <size>0.1 0.5 0.5</size>
+              <size>0.1 2.0 0.5</size>
             </box>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -621,7 +731,7 @@
         <visual name="visual">
           <geometry>
             <box>
-              <size>0.1 0.5 0.5</size>
+              <size>0.1 2.0 0.5</size>
             </box>
           </geometry>
           <material>
@@ -641,9 +751,9 @@
       </link>
       <static>1</static>
     </model>
-    <model name="wall">
+    <model name="wall_corridor">
       <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 5.5 1.145 0.25 0 0 1.57</pose>
+      <pose> -11.0 -1.145 0.25 0 0 1.57</pose>
       <link name="link">
         <inertial>
           <mass>10</mass>
@@ -659,7 +769,7 @@
         <collision name="collision">
           <geometry>
             <box>
-              <size>0.1 0.5 0.5</size>
+              <size>0.1 2.0 0.5</size>
             </box>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -676,7 +786,7 @@
         <visual name="visual">
           <geometry>
             <box>
-              <size>0.1 0.5 0.5</size>
+              <size>0.1 2.0 0.5</size>
             </box>
           </geometry>
           <material>
@@ -696,9 +806,9 @@
       </link>
       <static>1</static>
     </model>
-    <model name="wall">
+    <model name="wall_corridor">
       <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 6.0 1.145 0.25 0 0 1.57</pose>
+      <pose> -9.0 -1.145 0.25 0 0 1.57</pose>
       <link name="link">
         <inertial>
           <mass>10</mass>
@@ -714,7 +824,7 @@
         <collision name="collision">
           <geometry>
             <box>
-              <size>0.1 0.5 0.5</size>
+              <size>0.1 2.0 0.5</size>
             </box>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -731,7 +841,7 @@
         <visual name="visual">
           <geometry>
             <box>
-              <size>0.1 0.5 0.5</size>
+              <size>0.1 2.0 0.5</size>
             </box>
           </geometry>
           <material>
@@ -751,7 +861,172 @@
       </link>
       <static>1</static>
     </model>
-    <model name="wall">
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -7.0 -1.145 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -5.0 -1.145 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -3.0 -1.145 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
       <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
       <pose> -1.0 -1.145 0.25 0 0 1.57</pose>
       <link name="link">
@@ -769,7 +1044,7 @@
         <collision name="collision">
           <geometry>
             <box>
-              <size>0.1 0.5 0.5</size>
+              <size>0.1 2.0 0.5</size>
             </box>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -786,7 +1061,7 @@
         <visual name="visual">
           <geometry>
             <box>
-              <size>0.1 0.5 0.5</size>
+              <size>0.1 2.0 0.5</size>
             </box>
           </geometry>
           <material>
@@ -806,172 +1081,7 @@
       </link>
       <static>1</static>
     </model>
-    <model name="wall">
-      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> -0.5 -1.145 0.25 0 0 1.57</pose>
-      <link name="link">
-        <inertial>
-          <mass>10</mass>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-        </inertial>
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <bounce/>
-            <friction>
-              <ode/>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-          </surface>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
-          </material>
-        </visual>
-        <velocity_decay>
-          <linear>0</linear>
-          <angular>0</angular>
-        </velocity_decay>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <static>1</static>
-    </model>
-    <model name="wall">
-      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 0.0 -1.145 0.25 0 0 1.57</pose>
-      <link name="link">
-        <inertial>
-          <mass>10</mass>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-        </inertial>
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <bounce/>
-            <friction>
-              <ode/>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-          </surface>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
-          </material>
-        </visual>
-        <velocity_decay>
-          <linear>0</linear>
-          <angular>0</angular>
-        </velocity_decay>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <static>1</static>
-    </model>
-    <model name="wall">
-      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 0.5 -1.1455 0.25 0 0 1.57</pose>
-      <link name="link">
-        <inertial>
-          <mass>10</mass>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-        </inertial>
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <bounce/>
-            <friction>
-              <ode/>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-          </surface>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
-          </material>
-        </visual>
-        <velocity_decay>
-          <linear>0</linear>
-          <angular>0</angular>
-        </velocity_decay>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <static>1</static>
-    </model>
-    <model name="wall">
+    <model name="wall_corridor">
       <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
       <pose> 1.0 -1.1455 0.25 0 0 1.57</pose>
       <link name="link">
@@ -989,7 +1099,7 @@
         <collision name="collision">
           <geometry>
             <box>
-              <size>0.1 0.5 0.5</size>
+              <size>0.1 2.0 0.5</size>
             </box>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -1006,7 +1116,7 @@
         <visual name="visual">
           <geometry>
             <box>
-              <size>0.1 0.5 0.5</size>
+              <size>0.1 2.0 0.5</size>
             </box>
           </geometry>
           <material>
@@ -1026,172 +1136,7 @@
       </link>
       <static>1</static>
     </model>
-    <model name="wall">
-      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 1.5 -1.145 0.25 0 0 1.57</pose>
-      <link name="link">
-        <inertial>
-          <mass>10</mass>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-        </inertial>
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <bounce/>
-            <friction>
-              <ode/>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-          </surface>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
-          </material>
-        </visual>
-        <velocity_decay>
-          <linear>0</linear>
-          <angular>0</angular>
-        </velocity_decay>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <static>1</static>
-    </model>
-    <model name="wall">
-      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 2.0 -1.145 0.25 0 0 1.57</pose>
-      <link name="link">
-        <inertial>
-          <mass>10</mass>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-        </inertial>
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <bounce/>
-            <friction>
-              <ode/>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-          </surface>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
-          </material>
-        </visual>
-        <velocity_decay>
-          <linear>0</linear>
-          <angular>0</angular>
-        </velocity_decay>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <static>1</static>
-    </model>
-    <model name="wall">
-      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 2.5 -1.145 0.25 0 0 1.57</pose>
-      <link name="link">
-        <inertial>
-          <mass>10</mass>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-        </inertial>
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <bounce/>
-            <friction>
-              <ode/>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-          </surface>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
-          </material>
-        </visual>
-        <velocity_decay>
-          <linear>0</linear>
-          <angular>0</angular>
-        </velocity_decay>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <static>1</static>
-    </model>
-    <model name="wall">
+    <model name="wall_corridor">
       <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
       <pose> 3.0 -1.145 0.25 0 0 1.57</pose>
       <link name="link">
@@ -1209,7 +1154,7 @@
         <collision name="collision">
           <geometry>
             <box>
-              <size>0.1 0.5 0.5</size>
+              <size>0.1 2.0 0.5</size>
             </box>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -1226,7 +1171,7 @@
         <visual name="visual">
           <geometry>
             <box>
-              <size>0.1 0.5 0.5</size>
+              <size>0.1 2.0 0.5</size>
             </box>
           </geometry>
           <material>
@@ -1246,172 +1191,7 @@
       </link>
       <static>1</static>
     </model>
-    <model name="wall">
-      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 3.5 -1.145 0.25 0 0 1.57</pose>
-      <link name="link">
-        <inertial>
-          <mass>10</mass>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-        </inertial>
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <bounce/>
-            <friction>
-              <ode/>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-          </surface>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
-          </material>
-        </visual>
-        <velocity_decay>
-          <linear>0</linear>
-          <angular>0</angular>
-        </velocity_decay>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <static>1</static>
-    </model>
-    <model name="wall">
-      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 4.0 -1.145 0.25 0 0 1.57</pose>
-      <link name="link">
-        <inertial>
-          <mass>10</mass>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-        </inertial>
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <bounce/>
-            <friction>
-              <ode/>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-          </surface>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
-          </material>
-        </visual>
-        <velocity_decay>
-          <linear>0</linear>
-          <angular>0</angular>
-        </velocity_decay>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <static>1</static>
-    </model>
-    <model name="wall">
-      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 4.5 -1.145 0.25 0 0 1.57</pose>
-      <link name="link">
-        <inertial>
-          <mass>10</mass>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-        </inertial>
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <bounce/>
-            <friction>
-              <ode/>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-          </surface>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
-          </material>
-        </visual>
-        <velocity_decay>
-          <linear>0</linear>
-          <angular>0</angular>
-        </velocity_decay>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <static>1</static>
-    </model>
-    <model name="wall">
+    <model name="wall_corridor">
       <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
       <pose> 5.0 -1.145 0.25 0 0 1.57</pose>
       <link name="link">
@@ -1429,7 +1209,7 @@
         <collision name="collision">
           <geometry>
             <box>
-              <size>0.1 0.5 0.5</size>
+              <size>0.1 2.0 0.5</size>
             </box>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -1446,7 +1226,7 @@
         <visual name="visual">
           <geometry>
             <box>
-              <size>0.1 0.5 0.5</size>
+              <size>0.1 2.0 0.5</size>
             </box>
           </geometry>
           <material>
@@ -1466,9 +1246,9 @@
       </link>
       <static>1</static>
     </model>
-    <model name="wall">
+    <model name="wall_corridor">
       <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 5.5 -1.145 0.25 0 0 1.57</pose>
+      <pose> 7.0 -1.145 0.25 0 0 1.57</pose>
       <link name="link">
         <inertial>
           <mass>10</mass>
@@ -1484,7 +1264,7 @@
         <collision name="collision">
           <geometry>
             <box>
-              <size>0.1 0.5 0.5</size>
+              <size>0.1 2.0 0.5</size>
             </box>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -1501,7 +1281,7 @@
         <visual name="visual">
           <geometry>
             <box>
-              <size>0.1 0.5 0.5</size>
+              <size>0.1 2.0 0.5</size>
             </box>
           </geometry>
           <material>
@@ -1521,9 +1301,9 @@
       </link>
       <static>1</static>
     </model>
-    <model name="wall">
+    <model name="wall_corridor">
       <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 6.0 -1.145 0.25 0 0 1.57</pose>
+      <pose> 2.32 2.095 0.25 0 0 0</pose>
       <link name="link">
         <inertial>
           <mass>10</mass>
@@ -1539,7 +1319,7 @@
         <collision name="collision">
           <geometry>
             <box>
-              <size>0.1 0.5 0.5</size>
+              <size>0.1 2.0 0.5</size>
             </box>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -1556,7 +1336,7 @@
         <visual name="visual">
           <geometry>
             <box>
-              <size>0.1 0.5 0.5</size>
+              <size>0.1 2.0 0.5</size>
             </box>
           </geometry>
           <material>
@@ -1576,9 +1356,9 @@
       </link>
       <static>1</static>
     </model>
-    <model name="wall">
+    <model name="wall_corridor">
       <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 2.32 1.345 0.25 0 0 0</pose>
+      <pose> 2.32 4.095 0.25 0 0 0</pose>
       <link name="link">
         <inertial>
           <mass>10</mass>
@@ -1594,7 +1374,7 @@
         <collision name="collision">
           <geometry>
             <box>
-              <size>0.1 0.5 0.5</size>
+              <size>0.1 2.0 0.5</size>
             </box>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -1611,7 +1391,7 @@
         <visual name="visual">
           <geometry>
             <box>
-              <size>0.1 0.5 0.5</size>
+              <size>0.1 2.0 0.5</size>
             </box>
           </geometry>
           <material>
@@ -1631,9 +1411,9 @@
       </link>
       <static>1</static>
     </model>
-    <model name="wall">
+    <model name="wall_corridor">
       <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 2.32 1.845 0.25 0 0 0</pose>
+      <pose> 2.32 6.095 0.25 0 0 0</pose>
       <link name="link">
         <inertial>
           <mass>10</mass>
@@ -1649,7 +1429,7 @@
         <collision name="collision">
           <geometry>
             <box>
-              <size>0.1 0.5 0.5</size>
+              <size>0.1 2.0 0.5</size>
             </box>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -1666,557 +1446,7 @@
         <visual name="visual">
           <geometry>
             <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
-          </material>
-        </visual>
-        <velocity_decay>
-          <linear>0</linear>
-          <angular>0</angular>
-        </velocity_decay>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <static>1</static>
-    </model>
-    <model name="wall">
-      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 2.32 2.345 0.25 0 0 0</pose>
-      <link name="link">
-        <inertial>
-          <mass>10</mass>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-        </inertial>
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <bounce/>
-            <friction>
-              <ode/>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-          </surface>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
-          </material>
-        </visual>
-        <velocity_decay>
-          <linear>0</linear>
-          <angular>0</angular>
-        </velocity_decay>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <static>1</static>
-    </model>
-    <model name="wall">
-      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 2.32 2.845 0.25 0 0 0</pose>
-      <link name="link">
-        <inertial>
-          <mass>10</mass>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-        </inertial>
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <bounce/>
-            <friction>
-              <ode/>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-          </surface>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
-          </material>
-        </visual>
-        <velocity_decay>
-          <linear>0</linear>
-          <angular>0</angular>
-        </velocity_decay>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <static>1</static>
-    </model>
-    <model name="wall">
-      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 2.32 3.345 0.25 0 0 0</pose>
-      <link name="link">
-        <inertial>
-          <mass>10</mass>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-        </inertial>
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <bounce/>
-            <friction>
-              <ode/>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-          </surface>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
-          </material>
-        </visual>
-        <velocity_decay>
-          <linear>0</linear>
-          <angular>0</angular>
-        </velocity_decay>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <static>1</static>
-    </model>
-    <model name="wall">
-      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 2.32 3.845 0.25 0 0 0</pose>
-      <link name="link">
-        <inertial>
-          <mass>10</mass>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-        </inertial>
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <bounce/>
-            <friction>
-              <ode/>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-          </surface>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
-          </material>
-        </visual>
-        <velocity_decay>
-          <linear>0</linear>
-          <angular>0</angular>
-        </velocity_decay>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <static>1</static>
-    </model>
-    <model name="wall">
-      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 2.32 4.345 0.25 0 0 0</pose>
-      <link name="link">
-        <inertial>
-          <mass>10</mass>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-        </inertial>
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <bounce/>
-            <friction>
-              <ode/>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-          </surface>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
-          </material>
-        </visual>
-        <velocity_decay>
-          <linear>0</linear>
-          <angular>0</angular>
-        </velocity_decay>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <static>1</static>
-    </model>
-    <model name="wall">
-      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 2.32 4.845 0.25 0 0 0</pose>
-      <link name="link">
-        <inertial>
-          <mass>10</mass>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-        </inertial>
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <bounce/>
-            <friction>
-              <ode/>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-          </surface>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
-          </material>
-        </visual>
-        <velocity_decay>
-          <linear>0</linear>
-          <angular>0</angular>
-        </velocity_decay>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <static>1</static>
-    </model>
-    <model name="wall">
-      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 2.32 5.345 0.25 0 0 0</pose>
-      <link name="link">
-        <inertial>
-          <mass>10</mass>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-        </inertial>
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <bounce/>
-            <friction>
-              <ode/>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-          </surface>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
-          </material>
-        </visual>
-        <velocity_decay>
-          <linear>0</linear>
-          <angular>0</angular>
-        </velocity_decay>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <static>1</static>
-    </model>
-    <model name="wall">
-      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 2.32 5.845 0.25 0 0 0</pose>
-      <link name="link">
-        <inertial>
-          <mass>10</mass>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-        </inertial>
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <bounce/>
-            <friction>
-              <ode/>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-          </surface>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
-          </material>
-        </visual>
-        <velocity_decay>
-          <linear>0</linear>
-          <angular>0</angular>
-        </velocity_decay>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <static>1</static>
-    </model>
-    <model name="wall">
-      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 2.32 6.345 0.25 0 0 0</pose>
-      <link name="link">
-        <inertial>
-          <mass>10</mass>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-        </inertial>
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <bounce/>
-            <friction>
-              <ode/>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-          </surface>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/White</name>
-            </script>
-          </material>
-        </visual>
-        <velocity_decay>
-          <linear>0</linear>
-          <angular>0</angular>
-        </velocity_decay>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <static>1</static>
-    </model>
-    <model name="wall">
-      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 2.32 6.845 0.25 0 0 0</pose>
-      <link name="link">
-        <inertial>
-          <mass>10</mass>
-          <inertia>
-            <ixx>1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1</iyy>
-            <iyz>0</iyz>
-            <izz>1</izz>
-          </inertia>
-        </inertial>
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <bounce/>
-            <friction>
-              <ode/>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-          </surface>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.1 0.5 0.5</size>
+              <size>0.1 2.0 0.5</size>
             </box>
           </geometry>
           <material>
@@ -3336,9 +2566,1714 @@
       </link>
       <static>1</static>
     </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> 4.75 7.58 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> 6.75 7.58 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
     <model name="wall">
       <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 4.0 7.58 0.25 0 0 1.57</pose>
+      <pose> 7.82 7.58 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 0.5 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 0.5 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> 8.02 6.63 0.25 0 0 0</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> 8.02 4.63 0.25 0 0 0</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> 8.02 2.63 0.25 0 0 0</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> 8.02 1.395 0.25 0 0 0</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 0.5 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 0.5 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> 4.75 8.545 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> 6.75 8.545 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> 1.37 8.545 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -0.63 8.545 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -2.63 8.545 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -4.63 8.545 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -6.63 8.545 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -8.44 8.545 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -12.60 8.545 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -14.60 8.545 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -15.88 10.545 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -13.88 10.545 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -11.88 10.545 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -9.88 10.545 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -7.88 10.545 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -5.88 10.545 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -3.88 10.545 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -1.88 10.545 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> 0.12 10.545 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> 2.12 10.545 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> 4.12 10.545 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> 6.12 10.545 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> 7.12 10.545 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -9.39 7.595 0.25 0 0 0</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -9.39 6.345 0.25 0 0 0</pose>
       <link name="link">
         <inertial>
           <mass>10</mass>
@@ -3393,7 +4328,7 @@
     </model>
     <model name="wall">
       <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 4.5 7.58 0.25 0 0 1.57</pose>
+      <pose> -9.39 5.845 0.25 0 0 0</pose>
       <link name="link">
         <inertial>
           <mass>10</mass>
@@ -3448,7 +4383,7 @@
     </model>
     <model name="wall">
       <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 4.0 8.545 0.25 0 0 1.57</pose>
+      <pose> -9.59 5.645 0.25 0 0 1.57</pose>
       <link name="link">
         <inertial>
           <mass>10</mass>
@@ -3503,7 +4438,7 @@
     </model>
     <model name="wall">
       <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 4.5 8.545 0.25 0 0 1.57</pose>
+      <pose> -10.09 5.645 0.25 0 0 1.57</pose>
       <link name="link">
         <inertial>
           <mass>10</mass>
@@ -3558,7 +4493,337 @@
     </model>
     <model name="wall">
       <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 5.0 8.545 0.25 0 0 1.57</pose>
+      <pose> -10.56 5.645 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 0.5 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 0.5 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -10.76 4.695 0.25 0 0 0</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -10.76 2.695 0.25 0 0 0</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -10.76 2.095 0.25 0 0 0</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -12.66 1.145 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -14.66 1.145 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -15.7 1.145 0.25 0 0 1.57</pose>
       <link name="link">
         <inertial>
           <mass>10</mass>
@@ -3613,7 +4878,7 @@
     </model>
     <model name="wall">
       <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 5.5 8.545 0.25 0 0 1.57</pose>
+      <pose> -11.71 1.345 0.25 0 0 0</pose>
       <link name="link">
         <inertial>
           <mass>10</mass>
@@ -3668,7 +4933,7 @@
     </model>
     <model name="wall">
       <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 6.0 8.545 0.25 0 0 1.57</pose>
+      <pose> -11.71 1.845 0.25 0 0 0</pose>
       <link name="link">
         <inertial>
           <mass>10</mass>
@@ -3723,7 +4988,7 @@
     </model>
     <model name="wall">
       <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 2.12 8.545 0.25 0 0 1.57</pose>
+      <pose> -11.71 1.915 0.25 0 0 0</pose>
       <link name="link">
         <inertial>
           <mass>10</mass>
@@ -3778,7 +5043,7 @@
     </model>
     <model name="wall">
       <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 1.62 8.545 0.25 0 0 1.57</pose>
+      <pose> -11.91 2.115 0.25 0 0 1.57</pose>
       <link name="link">
         <inertial>
           <mass>10</mass>
@@ -3833,7 +5098,227 @@
     </model>
     <model name="wall">
       <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 1.12 8.545 0.25 0 0 1.57</pose>
+      <pose> -12.41 2.115 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 0.5 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 0.5 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -12.61 3.065 0.25 0 0 0</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -12.61 5.065 0.25 0 0 0</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -12.61 5.215 0.25 0 0 0</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -12.41 7.565 0.25 0 0 1.57</pose>
       <link name="link">
         <inertial>
           <mass>10</mass>
@@ -3888,7 +5373,7 @@
     </model>
     <model name="wall">
       <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 0.62 8.545 0.25 0 0 1.57</pose>
+      <pose> -11.91 7.565 0.25 0 0 1.57</pose>
       <link name="link">
         <inertial>
           <mass>10</mass>
@@ -3943,7 +5428,337 @@
     </model>
     <model name="wall">
       <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> 0.12 8.545 0.25 0 0 1.57</pose>
+      <pose> -11.85 7.565 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 0.5 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 0.5 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -13.66 7.565 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -14.98 7.565 0.25 0 0 1.57</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -15.93 6.615 0.25 0 0 0</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -15.93 4.615 0.25 0 0 0</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall_corridor">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -15.93 2.615 0.25 0 0 0</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 2.0 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -15.93 1.395 0.25 0 0 0</pose>
       <link name="link">
         <inertial>
           <mass>10</mass>
@@ -3998,7 +5813,7 @@
     </model>
     <model name="wall">
       <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> -0.38 8.545 0.25 0 0 1.57</pose>
+      <pose> -11.65 8.345 0.25 0 0 0</pose>
       <link name="link">
         <inertial>
           <mass>10</mass>
@@ -4053,7 +5868,62 @@
     </model>
     <model name="wall">
       <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
-      <pose> -0.88 8.545 0.25 0 0 1.57</pose>
+      <pose> -11.65 7.845 0.25 0 0 0</pose>
+      <link name="link">
+        <inertial>
+          <mass>10</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 0.5 0.5</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 0.5 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="wall">
+      <!-- <pose>&#45;0.09 0 0.5 0 0 1.57</pose> -->
+      <pose> -11.65 7.765 0.25 0 0 0</pose>
       <link name="link">
         <inertial>
           <mass>10</mass>
